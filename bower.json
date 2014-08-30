@@ -1,0 +1,13 @@
+{
+  "name": "c64-dragdrop-list",
+  "version": "0.0.0",
+  "keywords": [
+    "seed",
+    "polymer",
+    "web-components"
+  ],
+  "main": "c64-dragdrop-list.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.5"
+  }
+}

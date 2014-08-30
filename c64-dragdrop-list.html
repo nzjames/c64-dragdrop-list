@@ -1,0 +1,30 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <c64-dragdrop-list></c64-dragdrop-list>
+
+@element c64-dragdrop-list
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@homepage http://nzjames.github.io/c64-dragdrop-list
+-->
+
+<polymer-element name="c64-dragdrop-list" on-file-loaded="{{fileLoaded}}">
+  <template>
+    <content></content>
+  </template>
+    <script>
+        Polymer('c64-dragdrop-list',{
+            fileLoaded: function (e) {
+                var img = document.createElement("img");
+                img.file = e.detail.file;
+                img.src = e.detail.bin;
+                this.appendChild(img);
+            }
+        });
+    </script>
+</polymer-element>
